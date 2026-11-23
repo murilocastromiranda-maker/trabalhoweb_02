@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Agendamentos | Barbearia Camaradas</title>
+</head>
+<body>
+<header class="topo">
+  <div class="topo-conteudo">
+    <a class="marca" href="agenda.html">Barbearia <span>Camaradas</span></a>
+    <nav aria-label="Principal">
+      <a href="agenda.html">Agendamentos</a>
+      <a href="barbeiros.html">Barbeiros</a>
+      <span class="usuario">Olá, Maria</span>
+      <a href="index.html" class="btn btn-contorno btn-pequeno">Sair</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="cabecalho-pagina">
+    <div>
+      <h1>Agenda de clientes</h1>
+      <p>Marque, remarque e cancele horários.</p>
+    </div>
+    <a href="agendamento-form.html" class="btn btn-principal">Novo agendamento</a>
+  </div>
+
+<div class="caixa tabela-rolagem">
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Cliente</th>
+          <th>Serviço</th>
+          <th>Barbeiro</th>
+          <th class="num">Valor</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>25/11/2026</td>
+          <td class="hora">09:00</td>
+          <td>Carlos Souza</td>
+          <td>Corte + barba</td>
+          <td><span class="etiqueta">Pedro</span></td>
+          <td class="num">R$ 60,00</td>
+          <td>
+            <div class="acoes">
+              <a href="agendamento-form.html" class="btn btn-contorno btn-pequeno">Editar</a>
+              <a href="#" class="btn btn-perigo btn-pequeno">Excluir</a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>25/11/2026</td>
+          <td class="hora">10:30</td>
+          <td>João Pedro</td>
+          <td>Corte</td>
+          <td><span class="etiqueta">Murilo</span></td>
+          <td class="num">R$ 35,00</td>
+          <td>
+            <div class="acoes">
+              <a href="agendamento-form.html" class="btn btn-contorno btn-pequeno">Editar</a>
+              <a href="#" class="btn btn-perigo btn-pequeno">Excluir</a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+</main>
+<footer class="rodape">Barbearia Camaradas · Projeto full-stack</footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Criar conta | Barbearia Camaradas</title>
+</head>
+<body class="pagina-acesso">
+  <div class="cartao-acesso">
+    <header>
+      <div class="marca">Barbearia <span>Camaradas</span></div>
+      <p>Crie seu acesso à agenda</p>
+    </header>
+    <div class="corpo">
+
+      <form action="login.html" method="get">
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="voce@exemplo.com">
+        </div>
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" minlength="6" required autocomplete="new-password">
+          <p class="dica">Mínimo de 6 caracteres.</p>
+        </div>
+        <div class="campo">
+          <label for="confirma">Repita a senha</label>
+          <input type="password" id="confirma" name="confirma" minlength="6" required autocomplete="new-password">
+        </div>
+        <button type="submit" class="btn btn-principal btn-bloco">Criar conta</button>
+      </form>
+      <p class="rodape-acesso"><a href="index.html">Voltar ao início</a> · Já tem conta? <a href="login.html">Entrar</a></p>
+    </div>
+  </div>
+</body>
+</html>

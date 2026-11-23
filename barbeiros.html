@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Barbeiros | Barbearia Camaradas</title>
+</head>
+<body>
+<header class="topo">
+  <div class="topo-conteudo">
+    <a class="marca" href="agenda.html">Barbearia <span>Camaradas</span></a>
+    <nav aria-label="Principal">
+      <a href="agenda.html">Agendamentos</a>
+      <a href="barbeiros.html">Barbeiros</a>
+      <span class="usuario">Olá, Maria</span>
+      <a href="index.html" class="btn btn-contorno btn-pequeno">Sair</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="cabecalho-pagina">
+    <div>
+      <h1>Escolha seu barbeiro</h1>
+      <p>Cada barbeiro tem uma especialidade. Escolha um e marque seu horário.</p>
+    </div>
+  </div>
+
+  <div class="grade-barbeiros">
+    <article class="caixa barbeiro-card">
+      <div class="avatar" aria-hidden="true">M</div>
+      <h2>Murilo</h2>
+      <span class="etiqueta">Degradê</span>
+      <p>Especialista em degradê: do baixo ao alto, com acabamento na régua.</p>
+      <a href="agendamento-form.html" class="btn btn-principal btn-bloco">Agendar com Murilo</a>
+    </article>
+
+    <article class="caixa barbeiro-card">
+      <div class="avatar" aria-hidden="true">B</div>
+      <h2>Bryan</h2>
+      <span class="etiqueta">Corte social</span>
+      <p>Especialista em corte social: tesoura, risca e visual alinhado para o dia a dia.</p>
+      <a href="agendamento-form.html" class="btn btn-principal btn-bloco">Agendar com Bryan</a>
+    </article>
+
+    <article class="caixa barbeiro-card">
+      <div class="avatar" aria-hidden="true">P</div>
+      <h2>Pedro</h2>
+      <span class="etiqueta">Barba e bigode</span>
+      <p>Especialista em barba e bigode: modelagem, toalha quente e navalha.</p>
+      <a href="agendamento-form.html" class="btn btn-principal btn-bloco">Agendar com Pedro</a>
+    </article>
+  </div>
+
+  <h2 class="titulo-secao">Gerenciar barbeiros</h2>
+
+  <div class="caixa form-caixa" style="margin-bottom:24px;max-width:none">
+    <form action="barbeiros.html" method="get" class="linha-2">
+      <div class="campo">
+        <label for="nome_barbeiro">Nome</label>
+        <input type="text" id="nome_barbeiro" name="nome" required>
+      </div>
+      <div class="campo">
+        <label for="especialidade">Especialidade</label>
+        <input type="text" id="especialidade" name="especialidade" placeholder="Ex.: Degradê, barba">
+      </div>
+      <div><button type="submit" class="btn btn-principal">Adicionar barbeiro</button></div>
+    </form>
+  </div>
+
+  <div class="caixa tabela-rolagem">
+    <table>
+      <thead><tr><th>Barbeiro</th><th>Especialidade</th><th class="num">Agendamentos</th><th>Ações</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Murilo</td><td>Degradê</td><td class="num">1</td>
+          <td><div class="acoes"><a href="#" class="btn btn-perigo btn-pequeno">Excluir</a></div></td>
+        </tr>
+        <tr>
+          <td>Bryan</td><td>Corte social</td><td class="num">0</td>
+          <td><div class="acoes"><a href="#" class="btn btn-perigo btn-pequeno">Excluir</a></div></td>
+        </tr>
+        <tr>
+          <td>Pedro</td><td>Barba e bigode</td><td class="num">1</td>
+          <td><div class="acoes"><a href="#" class="btn btn-perigo btn-pequeno">Excluir</a></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+<footer class="rodape">Barbearia Camaradas · Projeto full-stack</footer>
+</body>
+</html>
