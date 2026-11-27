@@ -139,4 +139,30 @@ footer.rodape{text-align:center;color:var(--apagado);font-size:.85rem;padding:34
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
 
-input:invalid:not(:placeholder-shown):not(:focus){border-color:rgba(255,123,123,.6)}
+input.tocado:invalid:not(:focus),select.tocado:invalid:not(:focus){border-color:rgba(255,123,123,.6)}
+
+
+.topo nav a.ativo{color:#fff;position:relative}
+.topo nav a.ativo::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--azul)}
+.aviso{transition:opacity .4s,transform .4s}
+.aviso-saindo{opacity:0;transform:translateY(-6px)}
+.campo-senha{position:relative}
+.campo-senha input{padding-right:92px}
+.mostrar-senha{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:0;border-radius:6px;padding:6px 10px;color:var(--azul-claro);font:600 .85rem var(--corpo);cursor:pointer}
+.mostrar-senha:hover{background:var(--vidro-2)}
+.campo-atualizado{animation:pisca .7s ease}
+@keyframes pisca{from{border-color:var(--azul);box-shadow:0 0 0 4px rgba(59,123,240,.45)}}
+.btn:disabled{opacity:.6;cursor:wait}
+td.vazio{text-align:center;color:var(--suave);font-weight:400;padding:48px}
+.saindo{opacity:0;transform:translateX(18px);transition:opacity .3s,transform .3s}
+.modal-fundo{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:24px;background:rgba(3,5,10,.72);backdrop-filter:blur(4px);animation:aparece .2s ease}
+.modal-fundo[hidden]{display:none}
+.modal{width:100%;max-width:420px;padding:28px;background:#0a1430;box-shadow:0 30px 80px rgba(0,0,0,.6);animation:sobe .25s ease}
+.modal h2{font-size:1.5rem;color:#fff;margin-bottom:10px}
+.modal p{color:var(--suave)}
+.modal .form-botoes{justify-content:flex-end;margin-top:24px}
+.modal [hidden]{display:none}
+@keyframes aparece{from{opacity:0}}
+@keyframes sobe{from{opacity:0;transform:translateY(14px) scale(.98)}}
+.revelar{opacity:0;transform:translateY(18px);transition:opacity .55s ease var(--atraso,0ms),transform .55s ease var(--atraso,0ms)}
+.revelar.visivel{opacity:1;transform:none}
